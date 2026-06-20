@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Projects = () => {
   return (
     <section
@@ -10,7 +12,14 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
         {/* Project 1 */}
-        <div className="bg-slate-800/60 hover:bg-slate-800 transition border border-slate-700 rounded-xl p-5 sm:p-6">
+        <motion.div
+          whileHover={{
+            y: -10,
+            scale: 1.02,
+          }}
+          transition={{ duration: 0.2 }}
+          className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
+        >
           <h3 className="font-semibold text-lg sm:text-xl text-white">
             Telecom Service Management Platform (Mein Magenta App)
           </h3>
@@ -24,10 +33,17 @@ const Projects = () => {
             structures, optimized intensive database queries, and participated
             in active Agile sprint deliverables.
           </p>
-        </div>
+        </motion.div>
 
         {/* Project 2 */}
-        <div className="bg-slate-800/60 hover:bg-slate-800 transition border border-slate-700 rounded-xl p-5 sm:p-6">
+        <motion.div
+          whileHover={{
+            y: -10,
+            scale: 1.02,
+          }}
+          transition={{ duration: 0.2 }}
+          className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
+        >
           <h3 className="font-semibold text-lg sm:text-xl text-white">
             Tata Play Binge
           </h3>
@@ -36,10 +52,17 @@ const Projects = () => {
             OTT streaming platform delivering entertainment content through a
             unified ecosystem.
           </p>
-        </div>
+        </motion.div>
 
         {/* Project 3 */}
-        <div className="bg-slate-800/60 hover:bg-slate-800 transition border border-slate-700 rounded-xl p-5 sm:p-6">
+        <motion.div
+          whileHover={{
+            y: -10,
+            scale: 1.02,
+          }}
+          transition={{ duration: 0.2 }}
+          className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
+        >
           <h3 className="font-semibold text-lg sm:text-xl text-white">
             Diabetes Management System (Carelink Minimed)
           </h3>
@@ -52,10 +75,17 @@ const Projects = () => {
             compliance workflows, integrated CGM/BGM streams, refined UI/UX
             layouts, and provided extensive production troubleshooting.
           </p>
-        </div>
+        </motion.div>
 
         {/* Project 4 */}
-        <div className="bg-slate-800/60 hover:bg-slate-800 transition border border-slate-700 rounded-xl p-5 sm:p-6">
+        <motion.div
+          whileHover={{
+            y: -10,
+            scale: 1.02,
+          }}
+          transition={{ duration: 0.2 }}
+          className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
+        >
           <h3 className="font-semibold text-lg sm:text-xl text-white">
             E-Commerce Microservices Platform
           </h3>
@@ -70,7 +100,7 @@ const Projects = () => {
             Redis for caching layers, and containerized images using Docker.
             Secured via JWT authorization.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

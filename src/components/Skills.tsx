@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const skills = [
   "Java",
   "Spring Boot",
@@ -25,12 +27,17 @@ const Skills = () => {
 
       <div className="flex flex-wrap gap-3 sm:gap-4">
         {skills.map((skill) => (
-          <span
+          <motion.span
             key={skill}
-            className="px-4 py-2 text-sm sm:text-base bg-slate-800/60 hover:bg-slate-800 border border-slate-700 rounded-full text-slate-200 transition"
+            whileHover={{
+              scale: 1.1,
+              y: -5,
+            }}
+            whileTap={{ scale: 0.95 }}
+            className="px-4 py-2 bg-slate-800/60 border border-slate-700 rounded-full text-slate-200"
           >
             {skill}
-          </span>
+          </motion.span>
         ))}
       </div>
     </section>
