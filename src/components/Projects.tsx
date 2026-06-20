@@ -12,12 +12,17 @@ const Projects = () => {
         {/* Project 1 */}
         <div className="bg-slate-800/60 hover:bg-slate-800 transition border border-slate-700 rounded-xl p-5 sm:p-6">
           <h3 className="font-semibold text-lg sm:text-xl text-white">
-            InPen 2.0
+            Telecom Service Management Platform (Mein Magenta App)
           </h3>
 
           <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
-            Diabetes management application with insulin calculations, reminders
-            and therapy reporting.
+            Developed an enterprise-level telecom service management platform
+            enabling users to manage mobile plans, monitor usage patterns, view
+            account details, and initiate self-service activities via an
+            interactive web interface. Architected RESTful APIs with Spring
+            Boot, integrated frontend state management components with backend
+            structures, optimized intensive database queries, and participated
+            in active Agile sprint deliverables.
           </p>
         </div>
 
@@ -30,6 +35,40 @@ const Projects = () => {
           <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
             OTT streaming platform delivering entertainment content through a
             unified ecosystem.
+          </p>
+        </div>
+
+        {/* Project 3 */}
+        <div className="bg-slate-800/60 hover:bg-slate-800 transition border border-slate-700 rounded-xl p-5 sm:p-6">
+          <h3 className="font-semibold text-lg sm:text-xl text-white">
+            Diabetes Management System (Carelink Minimed)
+          </h3>
+
+          <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+            Engineered critical medical application features facilitating
+            continuous insulin tracking, blood glucose monitoring, automated
+            alerts, and seamless device-data integration. Designed comprehensive
+            Spring Boot REST APIs, implemented precise healthcare business
+            compliance workflows, integrated CGM/BGM streams, refined UI/UX
+            layouts, and provided extensive production troubleshooting.
+          </p>
+        </div>
+
+        {/* Project 4 */}
+        <div className="bg-slate-800/60 hover:bg-slate-800 transition border border-slate-700 rounded-xl p-5 sm:p-6">
+          <h3 className="font-semibold text-lg sm:text-xl text-white">
+            E-Commerce Microservices Platform
+          </h3>
+
+          <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+            Built a highly scalable, multi-module e-commerce ecosystem
+            leveraging microservices. Orchestrated distinct microservices for
+            Product, Cart, Order management, and User Authentication.
+            Established automated service discovery using Netflix Eureka,
+            configured Spring Cloud API Gateway for intelligent request routing,
+            incorporated Apache Kafka for asynchronous decoupling, integrated
+            Redis for caching layers, and containerized images using Docker.
+            Secured via JWT authorization.
           </p>
         </div>
       </div>

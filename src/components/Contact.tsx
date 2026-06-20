@@ -14,7 +14,9 @@ const Contact = () => {
         <div className="flex items-center gap-3">
           <FaEnvelope className="text-blue-400" />
           <span className="break-all sm:break-normal">
-            shrikantlohar321@gmail.com
+            <a href="mailto:shrikantlohar321@gmail.com">
+              shrikantlohar321@gmail.com
+            </a>
           </span>
         </div>
 
