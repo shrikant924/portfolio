@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
         {/* Logo */}
         <h1 className="font-bold text-lg sm:text-xl text-white">
-          Shrikant Lohar
+          Mr. Shrikant Shivaji Lohar
         </h1>
 
         {/* Links */}

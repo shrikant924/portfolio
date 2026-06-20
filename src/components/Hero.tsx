@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/resume.pdf"
+            href="/Resume.pdf"
             className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-lg text-white font-medium"
           >
             Resume
