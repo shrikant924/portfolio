@@ -1,4 +1,28 @@
-import { motion } from "framer-motion";
+import ProjectCard from "./ProjectCard";
+
+const projects = [
+  {
+    title: "Telecom Service Management Platform (Mein Magenta App)",
+    description:
+      "Developed an enterprise-level telecom service management platform enabling users to manage mobile plans, monitor usage patterns, view account details, and initiate self-service activities via an interactive web interface. Architected RESTful APIs with Spring Boot, integrated frontend state management components with backend structures, optimized intensive database queries, and participated in active Agile sprint deliverables.",
+  },
+  {
+    title: "Diabetes Management System (Carelink Minimed)",
+    description:
+      "Engineered critical medical application features facilitating continuous insulin tracking, blood glucose monitoring, automated alerts, and seamless device-data integration. Designed comprehensive Spring Boot REST APIs, implemented healthcare compliance workflows, integrated CGM/BGM streams, refined UI/UX layouts, and provided production troubleshooting.",
+  },
+  {
+    title: "E-Commerce Microservices Platform",
+    description:
+      "Built a scalable microservices-based e-commerce ecosystem with Product, Cart, Order, and Authentication services. Integrated Eureka Service Discovery, Spring Cloud Gateway, Kafka, Redis, Docker, and JWT security.",
+  },
+
+  {
+    title: "Product Search Engine",
+    description:
+      "Engineered an ultra-fast full-text search and indexing platform. Custom-designed optimized Elasticsearch indexes,dynamic text-analyzers, and analytical mappings. Developed fast query execution paths using Spring Data Elasticsearch,built a dynamic ReactJS filtering UI, and containerized the complete operational stack.",
+  },
+];
 
 const Projects = () => {
   return (
@@ -11,96 +35,13 @@ const Projects = () => {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-        {/* Project 1 */}
-        <motion.div
-          whileHover={{
-            y: -10,
-            scale: 1.02,
-          }}
-          transition={{ duration: 0.2 }}
-          className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
-        >
-          <h3 className="font-semibold text-lg sm:text-xl text-white">
-            Telecom Service Management Platform (Mein Magenta App)
-          </h3>
-
-          <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
-            Developed an enterprise-level telecom service management platform
-            enabling users to manage mobile plans, monitor usage patterns, view
-            account details, and initiate self-service activities via an
-            interactive web interface. Architected RESTful APIs with Spring
-            Boot, integrated frontend state management components with backend
-            structures, optimized intensive database queries, and participated
-            in active Agile sprint deliverables.
-          </p>
-        </motion.div>
-
-        {/* Project 2 */}
-        <motion.div
-          whileHover={{
-            y: -10,
-            scale: 1.02,
-          }}
-          transition={{ duration: 0.2 }}
-          className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
-        >
-          <h3 className="font-semibold text-lg sm:text-xl text-white">
-            Tata Play Binge
-          </h3>
-
-          <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
-            OTT streaming platform delivering entertainment content through a
-            unified ecosystem.
-          </p>
-        </motion.div>
-
-        {/* Project 3 */}
-        <motion.div
-          whileHover={{
-            y: -10,
-            scale: 1.02,
-          }}
-          transition={{ duration: 0.2 }}
-          className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
-        >
-          <h3 className="font-semibold text-lg sm:text-xl text-white">
-            Diabetes Management System (Carelink Minimed)
-          </h3>
-
-          <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
-            Engineered critical medical application features facilitating
-            continuous insulin tracking, blood glucose monitoring, automated
-            alerts, and seamless device-data integration. Designed comprehensive
-            Spring Boot REST APIs, implemented precise healthcare business
-            compliance workflows, integrated CGM/BGM streams, refined UI/UX
-            layouts, and provided extensive production troubleshooting.
-          </p>
-        </motion.div>
-
-        {/* Project 4 */}
-        <motion.div
-          whileHover={{
-            y: -10,
-            scale: 1.02,
-          }}
-          transition={{ duration: 0.2 }}
-          className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
-        >
-          <h3 className="font-semibold text-lg sm:text-xl text-white">
-            E-Commerce Microservices Platform
-          </h3>
-
-          <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
-            Built a highly scalable, multi-module e-commerce ecosystem
-            leveraging microservices. Orchestrated distinct microservices for
-            Product, Cart, Order management, and User Authentication.
-            Established automated service discovery using Netflix Eureka,
-            configured Spring Cloud API Gateway for intelligent request routing,
-            incorporated Apache Kafka for asynchronous decoupling, integrated
-            Redis for caching layers, and containerized images using Docker.
-            Secured via JWT authorization.
-          </p>
-        </motion.div>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
       </div>
     </section>
   );

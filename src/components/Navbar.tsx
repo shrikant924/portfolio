@@ -4,6 +4,14 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleNavClick = (id: string) => {
+    setIsOpen(false);
+
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-slate-900/80 backdrop-blur z-50 border-b border-slate-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -48,7 +56,9 @@ const Navbar = () => {
                     <a
                       key={item}
                       href={`#${item}`}
-                      onClick={() => setIsOpen(false)}
+                      onClick={() => {
+                        (setIsOpen(false), handleNavClick(item));
+                      }}
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
                     </a>
