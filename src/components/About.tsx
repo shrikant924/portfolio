@@ -9,10 +9,12 @@ const About = () => {
       </h2>
 
       <p className="text-slate-300 leading-7 sm:leading-8 text-sm sm:text-base md:text-lg max-w-3xl">
-        Full Stack Developer with 4+ years of experience in Java, Spring Boot,
-        ReactJS, Microservices and Cloud technologies. Experienced in building
-        scalable enterprise applications, REST APIs, CI/CD pipelines, Docker
-        deployments, Kafka integrations and PostgreSQL database solutions.
+        Dynamic Full Stack Developer with proven expertise at T-Systems ICT
+        India Pvt. Ltd., specializing in Java, Spring Boot, and ReactJS.
+        Successfully delivered high-performance RESTful APIs and optimized
+        application functionality. Adept at collaborating in Agile teams,
+        demonstrating strong problem-solving skills and a commitment to
+        excellence in software development.
       </p>
     </section>
   );
