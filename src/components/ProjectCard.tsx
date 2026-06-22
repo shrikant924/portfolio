@@ -15,9 +15,9 @@ const ProjectCard = ({ title, description }: ProjectCardProps) => {
       transition={{ duration: 0.2 }}
       className="bg-slate-800/60 border border-slate-700 rounded-xl p-6"
     >
-      <h3 className="font-semibold text-lg sm:text-xl text-white">{title}</h3>
+      <h3 className="font-semibold text-lg sm:text-xl text-inherit">{title}</h3>
 
-      <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+      <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed ">
         {description}
       </p>
     </motion.div>

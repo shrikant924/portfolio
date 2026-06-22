@@ -10,7 +10,7 @@ const Contact = () => {
         Contact
       </h2>
 
-      <div className="space-y-5 text-slate-300 text-sm sm:text-base md:text-lg">
+      <div className="space-y-5 text-inherit text-sm sm:text-base md:text-lg">
         <div className="flex items-center gap-3">
           <FaEnvelope className="text-blue-400" />
           <span className="break-all sm:break-normal">
